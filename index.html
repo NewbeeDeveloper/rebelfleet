@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Rebel Fleet </title>
+
+  <style>
+
+    body{
+      background:black;
+    }
+
+    @font-face {
+     font-family: 'jedi';
+     src: url('Starjedi/Starjedi.ttf') format("opentype");
+   }
+
+  h1{   
+    font-family: 'jedi', monospace;   
+    letter-spacing: 20px;    
+    text-align: center !important;   
+    color:#FFE81F;   
+    background-color: #000000; 
+  }
+
+  h2{text-align:center;}
+
+  .margin-vertical{
+    margin:50px 0px 50px 0px;
+    
+  }
+
+  th,td{
+    border: 2px solid white !important;
+  }
+
+  td{
+    padding: 25px !important;
+    text-align: center;
+  }
+
+  .card-img-top{
+    min-height: 300px;
+
+  }
+  .card {
+    width: 90%;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    min-height: 600px;
+    padding: 25px;
+    background-color: #a0a0a0;  
+  }
+  
+  .card p{
+    min-height: 150px;
+    color:white;
+  }
+
+  .credits{
+    color:white;
+    font-family:  monospace; 
+  }
+
+  th{
+    text-align: center;
+  }
+  .mess{
+    text-align: center;
+    color:red;
+  }
+
+  input{
+    background-color: black;
+    color:white;
+    text-align: center;
+  }
+
+  a{
+    color: #FFE81F!important;
+    background-color: black;
+    padding: 10px;
+    border: 2px solid gray;
+    cursor: pointer;
+  }
+
+  .title{
+    padding: 50px;
+  }
+
+  .card-title{
+    font-weight: bolder;
+  }
+
+</style>
+
+
+</head>
+<body>
+  <div class="title">
+    <h1>Rebel fleet against the empire</h1>
+  </div>
+
+  <h2 id="credits" class="credits"> </h2>
+
+  <div id="message" class="mess"></div>
+
+  <div class="container">
+
+    <div id="naves" class="margin-vertical"></div>
+    
+    <div class="row">
+      <div class="col col-lg-12">
+
+        <table id="shipInv" class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Imagen</th>
+              <th scope="col">Nave</th>
+              <th scope="col">Escuadras</th>
+              <th scope="col">Tokens</th>
+              <th scope="col">Eliminar</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+        
+      </div>
+    </div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="naves.js"></script>
+</body>
+</html>
